@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Play</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background: radial-gradient(circle, #1a1a1a, #000);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+/* CARD */
+.container{
+  width:100%;
+  max-width:360px;
+  background:#111;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 0 25px rgba(255,0,85,0.3);
+  text-align:center;
+}
+
+/* TITLE */
+.title{
+  color:#fff;
+  font-size:20px;
+  margin-bottom:15px;
+}
+
+/* BUTTON BASE */
+.btn{
+  display:block;
+  width:100%;
+  padding:16px;
+  margin:12px 0;
+  color:#fff;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:bold;
+  border-radius:50px;
+  transition:0.3s;
+  position:relative;
+  overflow:hidden;
+}
+
+/* EFEK KILAU */
+.btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+  transition:0.5s;
+}
+
+.btn:hover::before{
+  left:100%;
+}
+
+.btn:hover{
+  transform:scale(1.06);
+}
+
+/* BUTTON UTAMA */
+.btn-main{
+  background:linear-gradient(45deg,#ff0055,#ff7b00);
+  box-shadow:0 0 20px rgba(255,0,85,0.7);
+  animation:pulse 1.5s infinite;
+}
+
+/* BUTTON LAIN */
+.btn-second{
+  background:#1d3557;
+}
+
+.btn-third{
+  background:#2a9d8f;
+}
+
+/* ANIMASI */
+@keyframes pulse{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">🔥 VIDEO VIRAL 🔥</div>
+
+<!-- Tombol 1 (utama) -->
+<a href="https://videy.co/v/?id=u7Lgf48P1" class="btn btn-main" target="_blank">
+▶ WATCH NOW
+</a>
+
+<!-- Tombol 2 -->
+<a href="https://t.co/IoaCbe6bez" class="btn btn-second" target="_blank">
+😱 SERVER 2
+</a>
+
+<!-- Tombol 3 -->
+<a href="https://t.co/TpxEimSIEO" class="btn btn-third" target="_blank">
+⚡ SERVER 3
+</a>
+
+</div>
+
+</body>
+</html>
+
